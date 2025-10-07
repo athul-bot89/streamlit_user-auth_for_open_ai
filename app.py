@@ -80,7 +80,8 @@ else:
     token_provider = lambda: st.session_state.token["access_token"]
     #endpoint = os.getenv("ENDPOINT_URL", "https://ai-kokuljosetesthub385023345165.openai.azure.com/")
     endpoint = os.getenv("ENDPOINT_URL", "https://az-openai-botangelos.openai.azure.com/")
-    deployment = os.getenv("DEPLOYMENT_NAME", "gpt-4.1-mini")
+    #deployment = os.getenv("DEPLOYMENT_NAME", "gpt-4.1-mini")
+    deployment = os.getenv("DEPLOYMENT_NAME", "gpt-4o-mini")
     
     client = AzureOpenAI(
         azure_endpoint=endpoint,
