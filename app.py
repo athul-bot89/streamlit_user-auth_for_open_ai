@@ -12,7 +12,7 @@ AUTHORITY = f"https://login.microsoftonline.com/{TENANT_ID}"
 REDIRECT_PATH = "/redirect"
 SCOPE = ["https://cognitiveservices.azure.com/.default"]
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
-REDIRECT_URI = f"http://localhost:8000{REDIRECT_PATH}"
+REDIRECT_URI = f"https://yoyo-midhun-e4apfthfc2f9c0d8.southindia-01.azurewebsites.net{REDIRECT_PATH}"
 
 def build_msal_app(cache=None):
     return msal.ConfidentialClientApplication(
